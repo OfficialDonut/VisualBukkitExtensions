@@ -1,0 +1,3472 @@
+[
+  {
+    "descr": "Amount modified by calling method",
+    "field": "amount",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.EconomyResponse#amount",
+    "class": "net.milkbowl.vault.economy.EconomyResponse",
+    "return": "double"
+  },
+  {
+    "descr": "Set players prefix in the world they are currently in.",
+    "param-names": [
+      "Chat",
+      "Player",
+      "Prefix"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "setPlayerPrefix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerPrefix(org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Check if player is member of a group.",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "playerInGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#playerInGroup(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Name",
+      "Player Name"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "isBankMember",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#isBankMember(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "descr": "Gets players primary group\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer"
+    ],
+    "method": "getPrimaryGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#getPrimaryGroup(java.lang.String,org.bukkit.OfflinePlayer)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Get a players informational node (Boolean) value",
+    "param-names": [
+      "Chat",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player",
+      "java.lang.String",
+      "boolean"
+    ],
+    "method": "getPlayerInfoBoolean",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoBoolean(org.bukkit.entity.Player,java.lang.String,boolean)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "boolean"
+  },
+  {
+    "descr": "Add permission to a group.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Group",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "groupAdd",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#groupAdd(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Gets players primary group",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer"
+    ],
+    "method": "getPrimaryGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPrimaryGroup(java.lang.String,org.bukkit.OfflinePlayer)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Suffix"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setPlayerSuffix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerSuffix(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Checks if the player account has the amount - DO NOT USE NEGATIVE AMOUNTS",
+    "param-names": [
+      "Economy",
+      "Player",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "org.bukkit.OfflinePlayer",
+      "double"
+    ],
+    "method": "has",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#has(org.bukkit.OfflinePlayer,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerRemove",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerRemove(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Get a groups informational node (Integer) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "int"
+    ],
+    "method": "getGroupInfoInteger",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroupInfoInteger(org.bukkit.World,java.lang.String,java.lang.String,int)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "int"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Name",
+      "Player Name"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "isBankOwner",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#isBankOwner(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "descr": "Remove permission from a player.\\nWill attempt to remove permission from the player on the player's current world.  This is NOT a global operation.",
+    "param-names": [
+      "Permission",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "playerRemove",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerRemove(org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "setPlayerInfoDouble",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoDouble(java.lang.String,java.lang.String,java.lang.String,double)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Remove permission from a player.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "playerRemove",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerRemove(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Player Name",
+      "World Name"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "hasAccount",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#hasAccount(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "descr": "Check if a player is the owner of a bank account",
+    "param-names": [
+      "Economy",
+      "Name",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer"
+    ],
+    "method": "isBankOwner",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#isBankOwner(java.lang.String,org.bukkit.OfflinePlayer)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getPlayerInfoString",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoString(org.bukkit.World,java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getPlayerPrefix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerPrefix(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "static": true,
+    "field": "SUCCESS",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.EconomyResponse.ResponseType#SUCCESS",
+    "class": "net.milkbowl.vault.economy.EconomyResponse.ResponseType",
+    "return": "net.milkbowl.vault.economy.EconomyResponse.ResponseType"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "boolean"
+    ],
+    "method": "getPlayerInfoBoolean",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoBoolean(java.lang.String,java.lang.String,java.lang.String,boolean)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "int"
+    ],
+    "method": "setPlayerInfoInteger",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoInteger(org.bukkit.World,java.lang.String,java.lang.String,int)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.World",
+      "java.lang.String"
+    ],
+    "method": "getPlayerGroups",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#getPlayerGroups(org.bukkit.World,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "java.lang.String[]"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "setPlayerInfoDouble",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoDouble(org.bukkit.World,java.lang.String,java.lang.String,double)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "static": true,
+    "field": "FAILURE",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.EconomyResponse.ResponseType#FAILURE",
+    "class": "net.milkbowl.vault.economy.EconomyResponse.ResponseType",
+    "return": "net.milkbowl.vault.economy.EconomyResponse.ResponseType"
+  },
+  {
+    "descr": "Get a players informational node (Boolean) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String",
+      "boolean"
+    ],
+    "method": "getPlayerInfoBoolean",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoBoolean(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String,boolean)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "boolean"
+  },
+  {
+    "descr": "Set a players informational node (String) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setPlayerInfoString",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoString(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Player Name",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "withdrawPlayer",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#withdrawPlayer(java.lang.String,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "descr": "Add permission to a player.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "playerAdd",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerAdd(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getPrimaryGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#getPrimaryGroup(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Get players suffix in the world they are currently in.",
+    "param-names": [
+      "Chat",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player"
+    ],
+    "method": "getPlayerSuffix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerSuffix(org.bukkit.entity.Player)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Set a players informational node (Boolean) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "boolean"
+    ],
+    "method": "setGroupInfoBoolean",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setGroupInfoBoolean(org.bukkit.World,java.lang.String,java.lang.String,boolean)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerAdd",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerAdd(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Check if player is member of a group.",
+    "param-names": [
+      "Chat",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "playerInGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#playerInGroup(org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "boolean"
+  },
+  {
+    "descr": "Gets the list of groups that this player has",
+    "param-names": [
+      "Chat",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player"
+    ],
+    "method": "getPlayerGroups",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerGroups(org.bukkit.entity.Player)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String[]"
+  },
+  {
+    "descr": "Set a players informational node (Boolean) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String",
+      "boolean"
+    ],
+    "method": "setPlayerInfoBoolean",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoBoolean(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String,boolean)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Get players suffix in the specified world.",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer"
+    ],
+    "method": "getPlayerSuffix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerSuffix(java.lang.String,org.bukkit.OfflinePlayer)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Get a players prefix in the given world\\nUse NULL for world if requesting a global prefix",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer"
+    ],
+    "method": "getPlayerPrefix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerPrefix(java.lang.String,org.bukkit.OfflinePlayer)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Set group suffix",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Suffix"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setGroupSuffix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setGroupSuffix(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Set a groups informational node (String) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setGroupInfoString",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setGroupInfoString(org.bukkit.World,java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Sets players prefix in the given world.\\nUse NULL for world for setting in the Global scope.",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Prefix"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "setPlayerPrefix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerPrefix(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerAddGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerAddGroup(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerAdd",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerAdd(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Gets the list of groups that this player has",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer"
+    ],
+    "method": "getPlayerGroups",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerGroups(java.lang.String,org.bukkit.OfflinePlayer)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String[]"
+  },
+  {
+    "descr": "Deposit an amount to a player - DO NOT USE NEGATIVE AMOUNTS",
+    "param-names": [
+      "Economy",
+      "Player",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "org.bukkit.OfflinePlayer",
+      "double"
+    ],
+    "method": "depositPlayer",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#depositPlayer(org.bukkit.OfflinePlayer,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String"
+    ],
+    "method": "getPlayerPrefix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerPrefix(org.bukkit.World,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Set a groups informational node (String) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setGroupInfoString",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setGroupInfoString(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Constructor for EconomyResponse",
+    "param-names": [
+      "Amount",
+      "Balance",
+      "Type",
+      "Error Message"
+    ],
+    "param-types": [
+      "double",
+      "double",
+      "net.milkbowl.vault.economy.EconomyResponse.ResponseType",
+      "java.lang.String"
+    ],
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.EconomyResponse#EconomyResponse(double,double,net.milkbowl.vault.economy.EconomyResponse.ResponseType,java.lang.String)",
+    "class": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "descr": "Deletes a bank account with the specified name.",
+    "param-names": [
+      "Economy",
+      "Name"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String"
+    ],
+    "method": "deleteBank",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#deleteBank(java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "descr": "Set a groups informational node (Integer) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "int"
+    ],
+    "method": "setGroupInfoInteger",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setGroupInfoInteger(org.bukkit.World,java.lang.String,java.lang.String,int)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Withdraw an amount from a player - DO NOT USE NEGATIVE AMOUNTS",
+    "param-names": [
+      "Economy",
+      "Player",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "org.bukkit.OfflinePlayer",
+      "double"
+    ],
+    "method": "withdrawPlayer",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#withdrawPlayer(org.bukkit.OfflinePlayer,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "descr": "Format amount into a human readable String This provides translation into\\neconomy specific formatting to improve consistency between plugins.",
+    "param-names": [
+      "Economy",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "double"
+    ],
+    "method": "format",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#format(double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Checks if this player has an account on the server yet\\nThis will always return true if the player has joined the server at least once\\nas all major economy plugins auto-generate a player account when the player joins the server",
+    "param-names": [
+      "Economy",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "org.bukkit.OfflinePlayer"
+    ],
+    "method": "hasAccount",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#hasAccount(org.bukkit.OfflinePlayer)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "descr": "Set a players informational node (Double) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "setPlayerInfoDouble",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoDouble(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String,double)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Player Name",
+      "World Name",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "has",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#has(java.lang.String,java.lang.String,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "descr": "Set a groups informational node (Double) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "setGroupInfoDouble",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setGroupInfoDouble(org.bukkit.World,java.lang.String,java.lang.String,double)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Gets name of economy method",
+    "param-names": ["Economy"],
+    "param-types": ["net.milkbowl.vault.economy.Economy"],
+    "method": "getName",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#getName()",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Check if player is member of a group.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "playerInGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerInGroup(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Get a groups informational node (Integer) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "int"
+    ],
+    "method": "getGroupInfoInteger",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroupInfoInteger(java.lang.String,java.lang.String,java.lang.String,int)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "int"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerInGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerInGroup(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Player Name",
+      "World Name",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "withdrawPlayer",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#withdrawPlayer(java.lang.String,java.lang.String,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Name",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "createBank",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#createBank(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "descr": "Returns a list of all known groups",
+    "param-names": ["Permission"],
+    "param-types": ["net.milkbowl.vault.permission.Permission"],
+    "method": "getGroups",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#getGroups()",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "java.lang.String[]"
+  },
+  {
+    "descr": "Attempts to create a player account for the given player on the specified world\\nIMPLEMENTATION SPECIFIC - if an economy plugin does not support this then false will always be returned.",
+    "param-names": [
+      "Economy",
+      "Player",
+      "World Name"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "createPlayerAccount",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#createPlayerAccount(org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "descr": "Get group suffix",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String"
+    ],
+    "method": "getGroupSuffix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroupSuffix(org.bukkit.World,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Set a players informational node (Boolean) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "boolean"
+    ],
+    "method": "getGroupInfoBoolean",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroupInfoBoolean(org.bukkit.World,java.lang.String,java.lang.String,boolean)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "boolean"
+  },
+  {
+    "descr": "Checks if the player account has the amount in a given world - DO NOT USE NEGATIVE AMOUNTS\\nIMPLEMENTATION SPECIFIC - if an economy plugin does not support this the global balance will be returned.",
+    "param-names": [
+      "Economy",
+      "Player",
+      "World Name",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "has",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#has(org.bukkit.OfflinePlayer,java.lang.String,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "descr": "Set a players informational node (Double) value",
+    "param-names": [
+      "Chat",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "setPlayerInfoDouble",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoDouble(org.bukkit.entity.Player,java.lang.String,double)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "static": true,
+    "field": "NOT_IMPLEMENTED",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.EconomyResponse.ResponseType#NOT_IMPLEMENTED",
+    "class": "net.milkbowl.vault.economy.EconomyResponse.ResponseType",
+    "return": "net.milkbowl.vault.economy.EconomyResponse.ResponseType"
+  },
+  {
+    "descr": "Removes a world specific transient permission from the player, may only work with some permission managers.\\nDefaults to GLOBAL permissions for any permission system that does not support world-specific transient permissions!",
+    "param-names": [
+      "Permission",
+      "World Name",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "playerRemoveTransient",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerRemoveTransient(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Remove permission from a player.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerRemove",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerRemove(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Player Name",
+      "World"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getBalance",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#getBalance(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "double"
+  },
+  {
+    "descr": "Add player to a group.\\nThis will add a player to the group on the current World.  This may return odd results if the permission system\\nbeing used on the server does not support world-specific groups, or if the group being added to is a global group.",
+    "param-names": [
+      "Permission",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "playerAddGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerAddGroup(org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Checks if permission method is enabled.",
+    "param-names": ["Chat"],
+    "param-types": ["net.milkbowl.vault.chat.Chat"],
+    "method": "isEnabled",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#isEnabled()",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "boolean"
+  },
+  {
+    "descr": "Add permission to a group.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Group",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "groupAdd",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#groupAdd(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Gets the list of groups that this player has\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer"
+    ],
+    "method": "getPlayerGroups",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#getPlayerGroups(java.lang.String,org.bukkit.OfflinePlayer)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "java.lang.String[]"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "has",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#has(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Adds a world specific transient permission to the player, may only work with some permission managers.\\nDefaults to GLOBAL permissions for any permission system that does not support world-specific transient permissions!",
+    "param-names": [
+      "Permission",
+      "World Name",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "playerAddTransient",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerAddTransient(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Suffix"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setPlayerSuffix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerSuffix(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getPrimaryGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPrimaryGroup(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Withdraw an amount from a player on a given world - DO NOT USE NEGATIVE AMOUNTS\\nIMPLEMENTATION SPECIFIC - if an economy plugin does not support this the global balance will be returned.",
+    "param-names": [
+      "Economy",
+      "Player",
+      "World Name",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "withdrawPlayer",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#withdrawPlayer(org.bukkit.OfflinePlayer,java.lang.String,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getPlayerSuffix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerSuffix(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Checks if player has a permission node. (Short for playerHas(...)",
+    "param-names": [
+      "Permission",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "has",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#has(org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#Permission()",
+    "class": "net.milkbowl.vault.permission.Permission"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Prefix"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setPlayerPrefix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerPrefix(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Prefix"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setPlayerPrefix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerPrefix(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Checks if this player has an account on the server yet on the given world\\nThis will always return true if the player has joined the server at least once\\nas all major economy plugins auto-generate a player account when the player joins the server",
+    "param-names": [
+      "Economy",
+      "Player",
+      "World Name"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "hasAccount",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#hasAccount(org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "descr": "Checks if group has a permission node.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Group",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "groupHas",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#groupHas(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Success or failure of call. Using Enum of ResponseType to determine valid\\noutcomes",
+    "field": "type",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.EconomyResponse#type",
+    "class": "net.milkbowl.vault.economy.EconomyResponse",
+    "return": "net.milkbowl.vault.economy.EconomyResponse.ResponseType"
+  },
+  {
+    "descr": "Returns if the permission system is or attempts to be compatible with super-perms.",
+    "param-names": ["Permission"],
+    "param-types": ["net.milkbowl.vault.permission.Permission"],
+    "method": "hasSuperPermsCompat",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#hasSuperPermsCompat()",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "boolean"
+    ],
+    "method": "getPlayerInfoBoolean",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoBoolean(org.bukkit.World,java.lang.String,java.lang.String,boolean)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "boolean"
+  },
+  {
+    "descr": "Get a groups informational node (Double) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "getGroupInfoDouble",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroupInfoDouble(org.bukkit.World,java.lang.String,java.lang.String,double)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "double"
+  },
+  {
+    "descr": "Gets balance of a player on the specified world.\\nIMPLEMENTATION SPECIFIC - if an economy plugin does not support this the global balance will be returned.",
+    "param-names": [
+      "Economy",
+      "Player",
+      "World"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "getBalance",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#getBalance(org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "double"
+  },
+  {
+    "descr": "Set a players informational node (String) value",
+    "param-names": [
+      "Chat",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setPlayerInfoString",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoString(org.bukkit.entity.Player,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String"
+    ],
+    "method": "getPrimaryGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPrimaryGroup(org.bukkit.World,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Set a players informational node (Integer) value",
+    "param-names": [
+      "Chat",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player",
+      "java.lang.String",
+      "int"
+    ],
+    "method": "setPlayerInfoInteger",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoInteger(org.bukkit.entity.Player,java.lang.String,int)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Checks if a CommandSender has a permission node.\\nThis will return the result of bukkits, generic .hasPermission() method and is identical in all cases.\\nThis method will explicitly fail if the registered permission system does not register permissions in bukkit.\\nFor easy checking of a commandsender",
+    "param-names": [
+      "Permission",
+      "Sender",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.command.CommandSender",
+      "java.lang.String"
+    ],
+    "method": "has",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#has(org.bukkit.command.CommandSender,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerRemoveGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerRemoveGroup(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Get a players informational node (String) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getPlayerInfoString",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoString(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String"
+    ],
+    "method": "getPlayerSuffix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerSuffix(org.bukkit.World,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Set group suffix",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Suffix"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setGroupSuffix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setGroupSuffix(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "int"
+    ],
+    "method": "getPlayerInfoInteger",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoInteger(org.bukkit.World,java.lang.String,java.lang.String,int)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "int"
+  },
+  {
+    "descr": "Get a players informational node (String) value",
+    "param-names": [
+      "Chat",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getPlayerInfoString",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoString(org.bukkit.entity.Player,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getPlayerInfoString",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoString(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Get a players informational node (Integer) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String",
+      "int"
+    ],
+    "method": "getPlayerInfoInteger",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoInteger(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String,int)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "int"
+  },
+  {
+    "descr": "Deposit an amount to a player - DO NOT USE NEGATIVE AMOUNTS\\nIMPLEMENTATION SPECIFIC - if an economy plugin does not support this the global balance will be returned.",
+    "param-names": [
+      "Economy",
+      "Player",
+      "World Name",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "depositPlayer",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#depositPlayer(org.bukkit.OfflinePlayer,java.lang.String,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "descr": "Gets name of permission method",
+    "param-names": ["Permission"],
+    "param-types": ["net.milkbowl.vault.permission.Permission"],
+    "method": "getName",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#getName()",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Check if player is member of a group.\\nThis method will ONLY check groups for which the player is in that are defined for the current world.\\nThis may result in odd return behaviour depending on what permission system has been registered.",
+    "param-names": [
+      "Permission",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "playerInGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerInGroup(org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Returns the amount the bank has",
+    "param-names": [
+      "Economy",
+      "Name"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String"
+    ],
+    "method": "bankBalance",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#bankBalance(java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerInGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#playerInGroup(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getPlayerGroups",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerGroups(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String[]"
+  },
+  {
+    "descr": "Checks if permission method is enabled.",
+    "param-names": ["Permission"],
+    "param-types": ["net.milkbowl.vault.permission.Permission"],
+    "method": "isEnabled",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#isEnabled()",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Player Name",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "has",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#has(java.lang.String,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "descr": "Set a groups informational node (Integer) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "int"
+    ],
+    "method": "setGroupInfoInteger",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setGroupInfoInteger(java.lang.String,java.lang.String,java.lang.String,int)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": ["Perms"],
+    "param-types": ["net.milkbowl.vault.permission.Permission"],
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#Chat(net.milkbowl.vault.permission.Permission)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Returns the name of the currency in singular form.\\nIf the economy being used does not support currency names then an empty string will be returned.",
+    "param-names": ["Economy"],
+    "param-types": ["net.milkbowl.vault.economy.Economy"],
+    "method": "currencyNameSingular",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#currencyNameSingular()",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "java.lang.String"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String"
+    ],
+    "method": "getPlayerGroups",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerGroups(org.bukkit.World,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String[]"
+  },
+  {
+    "descr": "Get a groups informational node (Double) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "getGroupInfoDouble",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroupInfoDouble(java.lang.String,java.lang.String,java.lang.String,double)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "double"
+  },
+  {
+    "descr": "Removes a world specific transient permission from the player, may only work with some permission managers.\\nDefaults to GLOBAL permissions for any permission system that does not support world-specific transient permissions!",
+    "param-names": [
+      "Permission",
+      "World Name",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "playerRemoveTransient",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerRemoveTransient(java.lang.String,org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Set players suffix in the world they currently occupy.",
+    "param-names": [
+      "Chat",
+      "Player",
+      "Suffix"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "setPlayerSuffix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerSuffix(org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Remove transient permission from a player.",
+    "param-names": [
+      "Permission",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "playerRemoveTransient",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerRemoveTransient(org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setPlayerInfoString",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoString(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Player Name",
+      "World Name"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "createPlayerAccount",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#createPlayerAccount(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Player Name"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String"
+    ],
+    "method": "createPlayerAccount",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#createPlayerAccount(java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "getPlayerInfoDouble",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoDouble(java.lang.String,java.lang.String,java.lang.String,double)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "double"
+  },
+  {
+    "descr": "Set a players informational node (String) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getGroupInfoString",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroupInfoString(org.bukkit.World,java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "boolean"
+    ],
+    "method": "setPlayerInfoBoolean",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoBoolean(java.lang.String,java.lang.String,java.lang.String,boolean)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Checks if economy method is enabled.",
+    "param-names": ["Economy"],
+    "param-types": ["net.milkbowl.vault.economy.Economy"],
+    "method": "isEnabled",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#isEnabled()",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "descr": "Set a groups informational node (Boolean) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "boolean"
+    ],
+    "method": "setGroupInfoBoolean",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setGroupInfoBoolean(java.lang.String,java.lang.String,java.lang.String,boolean)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Get a groups informational node (Boolean) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "boolean"
+    ],
+    "method": "getGroupInfoBoolean",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroupInfoBoolean(java.lang.String,java.lang.String,java.lang.String,boolean)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "boolean"
+  },
+  {
+    "descr": "Add transient permission to a player.\\nThis operation adds a permission onto the player object in bukkit via Bukkit's permission interface.",
+    "param-names": [
+      "Permission",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "playerAddTransient",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerAddTransient(org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Get players prefix from the world they are currently in. \\nMay or may not return the global prefix depending on implementation.",
+    "param-names": [
+      "Chat",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player"
+    ],
+    "method": "getPlayerPrefix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerPrefix(org.bukkit.entity.Player)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Get group suffix",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getGroupSuffix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroupSuffix(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Error message if the variable 'type' is ResponseType.FAILURE",
+    "field": "errorMessage",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.EconomyResponse#errorMessage",
+    "class": "net.milkbowl.vault.economy.EconomyResponse",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Set group prefix",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Prefix"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setGroupPrefix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setGroupPrefix(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Remove permission from a group.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Group",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "groupRemove",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#groupRemove(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Returns a list of world-specific groups that this player is currently in. May return unexpected results if\\nyou are looking for global groups, or if the registered permission system does not support world-specific groups.\\nSee #getPlayerGroups(String, OfflinePlayer) for better control of World-specific or global groups.",
+    "param-names": [
+      "Permission",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.entity.Player"
+    ],
+    "method": "getPlayerGroups",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#getPlayerGroups(org.bukkit.entity.Player)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "java.lang.String[]"
+  },
+  {
+    "descr": "Adds a world specific transient permission to the player, may only work with some permission managers.\\nDefaults to GLOBAL permissions for any permission system that does not support world-specific transient permissions!",
+    "param-names": [
+      "Permission",
+      "World Name",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "playerAddTransient",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerAddTransient(java.lang.String,org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Remove player from a group.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "playerRemoveGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerRemoveGroup(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerInGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerInGroup(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Set a players informational node (Integer) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String",
+      "int"
+    ],
+    "method": "setPlayerInfoInteger",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoInteger(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String,int)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Check if the player is a member of the bank account",
+    "param-names": [
+      "Economy",
+      "Name",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer"
+    ],
+    "method": "isBankMember",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#isBankMember(java.lang.String,org.bukkit.OfflinePlayer)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "descr": "Gets name of permission method",
+    "param-names": ["Chat"],
+    "param-types": ["net.milkbowl.vault.chat.Chat"],
+    "method": "getName",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getName()",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "New balance of account",
+    "field": "balance",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.EconomyResponse#balance",
+    "class": "net.milkbowl.vault.economy.EconomyResponse",
+    "return": "double"
+  },
+  {
+    "descr": "Remove permission from a group.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Group",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "groupRemove",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#groupRemove(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Get group prefix",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String"
+    ],
+    "method": "getGroupPrefix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroupPrefix(org.bukkit.World,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Returns true if the given implementation supports groups.",
+    "param-names": ["Permission"],
+    "param-types": ["net.milkbowl.vault.permission.Permission"],
+    "method": "hasGroupSupport",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#hasGroupSupport()",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Attempts to create a player account for the given player",
+    "param-names": [
+      "Economy",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "org.bukkit.OfflinePlayer"
+    ],
+    "method": "createPlayerAccount",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#createPlayerAccount(org.bukkit.OfflinePlayer)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "descr": "Returns the name of the currency in plural form.\\nIf the economy being used does not support currency names then an empty string will be returned.",
+    "param-names": ["Economy"],
+    "param-types": ["net.milkbowl.vault.economy.Economy"],
+    "method": "currencyNamePlural",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#currencyNamePlural()",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "java.lang.String"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "boolean"
+    ],
+    "method": "setPlayerInfoBoolean",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoBoolean(org.bukkit.World,java.lang.String,java.lang.String,boolean)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Checks if player has a permission node.\\nDefaults to world-specific permission check if the permission system supports it.\\nSee #playerHas(String, OfflinePlayer, String) for explicit global or world checks.",
+    "param-names": [
+      "Permission",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "playerHas",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerHas(org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Player Name"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String"
+    ],
+    "method": "getBalance",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#getBalance(java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "double"
+  },
+  {
+    "descr": "Add transient permission to a player.\\nThis implementation can be used by any subclass which implements a \"pure\" superperms plugin, i.e. \\none that only needs the built-in Bukkit API to add transient permissions to a player.",
+    "param-names": [
+      "Permission",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "playerAddTransient",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerAddTransient(org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Creates a bank account with the specified name and the player as the owner",
+    "param-names": [
+      "Economy",
+      "Name",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer"
+    ],
+    "method": "createBank",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#createBank(java.lang.String,org.bukkit.OfflinePlayer)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "descr": "Returns a list of all known groups",
+    "param-names": ["Chat"],
+    "param-types": ["net.milkbowl.vault.chat.Chat"],
+    "method": "getGroups",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroups()",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String[]"
+  },
+  {
+    "descr": "Gets balance of a player",
+    "param-names": [
+      "Economy",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "org.bukkit.OfflinePlayer"
+    ],
+    "method": "getBalance",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#getBalance(org.bukkit.OfflinePlayer)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "double"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setPlayerInfoString",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoString(org.bukkit.World,java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Set a players informational node (Boolean) value",
+    "param-names": [
+      "Chat",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player",
+      "java.lang.String",
+      "boolean"
+    ],
+    "method": "setPlayerInfoBoolean",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoBoolean(org.bukkit.entity.Player,java.lang.String,boolean)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "int"
+    ],
+    "method": "getPlayerInfoInteger",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoInteger(java.lang.String,java.lang.String,java.lang.String,int)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "int"
+  },
+  {
+    "descr": "Checks if an operation was successful",
+    "param-names": ["EconomyResponse"],
+    "param-types": ["net.milkbowl.vault.economy.EconomyResponse"],
+    "method": "transactionSuccess",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.EconomyResponse#transactionSuccess()",
+    "class": "net.milkbowl.vault.economy.EconomyResponse",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerHas",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerHas(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerHas",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerHas(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Gets the list of banks",
+    "param-names": ["Economy"],
+    "param-types": ["net.milkbowl.vault.economy.Economy"],
+    "method": "getBanks",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#getBanks()",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "java.util.List"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerRemoveGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerRemoveGroup(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Withdraw an amount from a bank account - DO NOT USE NEGATIVE AMOUNTS",
+    "param-names": [
+      "Economy",
+      "Name",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "bankWithdraw",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#bankWithdraw(java.lang.String,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "int"
+    ],
+    "method": "setPlayerInfoInteger",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerInfoInteger(java.lang.String,java.lang.String,java.lang.String,int)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerAddGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerAddGroup(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getPlayerGroups",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#getPlayerGroups(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "java.lang.String[]"
+  },
+  {
+    "descr": "Add player to a group.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "playerAddGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerAddGroup(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Deposit an amount into a bank account - DO NOT USE NEGATIVE AMOUNTS",
+    "param-names": [
+      "Economy",
+      "Name",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "bankDeposit",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#bankDeposit(java.lang.String,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "descr": "Some economy plugins round off after a certain number of digits.\\nThis function returns the number of digits the plugin keeps\\nor -1 if no rounding occurs.",
+    "param-names": ["Economy"],
+    "param-types": ["net.milkbowl.vault.economy.Economy"],
+    "method": "fractionalDigits",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#fractionalDigits()",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "int"
+  },
+  {
+    "param-names": ["Name"],
+    "static": true,
+    "param-types": ["java.lang.String"],
+    "method": "valueOf",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.EconomyResponse.ResponseType#valueOf(java.lang.String)",
+    "class": "net.milkbowl.vault.economy.EconomyResponse.ResponseType",
+    "return": "net.milkbowl.vault.economy.EconomyResponse.ResponseType"
+  },
+  {
+    "descr": "Returns true or false whether the bank has the amount specified - DO NOT USE NEGATIVE AMOUNTS",
+    "param-names": [
+      "Economy",
+      "Name",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "bankHas",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#bankHas(java.lang.String,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "descr": "Set players suffix for the world specified",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Suffix"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "setPlayerSuffix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setPlayerSuffix(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.World",
+      "java.lang.String"
+    ],
+    "method": "getPrimaryGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#getPrimaryGroup(org.bukkit.World,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Get players primary group.\\nDefaults to the players current world, so may return only world-specific groups.\\nIn most cases #getPrimaryGroup(String, OfflinePlayer) is preferable.",
+    "param-names": [
+      "Permission",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.entity.Player"
+    ],
+    "method": "getPrimaryGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#getPrimaryGroup(org.bukkit.entity.Player)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "java.lang.String"
+  },
+  {
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "has",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#has(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Get a players informational node (Integer) value",
+    "param-names": [
+      "Chat",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player",
+      "java.lang.String",
+      "int"
+    ],
+    "method": "getPlayerInfoInteger",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoInteger(org.bukkit.entity.Player,java.lang.String,int)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "int"
+  },
+  {
+    "descr": "Get players primary group",
+    "param-names": [
+      "Chat",
+      "Player"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player"
+    ],
+    "method": "getPrimaryGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPrimaryGroup(org.bukkit.entity.Player)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Get a groups informational node (String) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getGroupInfoString",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroupInfoString(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "getPlayerInfoDouble",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoDouble(org.bukkit.World,java.lang.String,java.lang.String,double)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "double"
+  },
+  {
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "playerInGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#playerInGroup(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "boolean"
+  },
+  {
+    "descr": "Checks if group has a permission node.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Group",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.World",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "groupHas",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#groupHas(org.bukkit.World,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Checks if player has a permission node.\\nSupports NULL value for World if the permission system registered supports global permissions.\\nBut May return odd values if the servers registered permission system does not have a global permission store.",
+    "param-names": [
+      "Permission",
+      "World",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "playerHas",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerHas(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Remove player from a group.\\nThis will add a player to the group on the current World.  This may return odd results if the permission system\\nbeing used on the server does not support world-specific groups, or if the group being added to is a global group.",
+    "param-names": [
+      "Permission",
+      "Player",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "playerRemoveGroup",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerRemoveGroup(org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Get a players informational node (Double) value",
+    "param-names": [
+      "Chat",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "org.bukkit.entity.Player",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "getPlayerInfoDouble",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoDouble(org.bukkit.entity.Player,java.lang.String,double)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "double"
+  },
+  {
+    "descr": "Get a players informational node (Double) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Player",
+      "Node",
+      "Default Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "getPlayerInfoDouble",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getPlayerInfoDouble(java.lang.String,org.bukkit.OfflinePlayer,java.lang.String,double)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "double"
+  },
+  {
+    "descr": "Set a groups informational node (Double) value",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Node",
+      "Value"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "setGroupInfoDouble",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setGroupInfoDouble(java.lang.String,java.lang.String,java.lang.String,double)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Add permission to a player ONLY for the world the player is currently on.\\nThis is a world-specific operation, if you want to add global permission you must explicitly use NULL for the world.\\nSee #playerAdd(String, OfflinePlayer, String) for global permission use.",
+    "param-names": [
+      "Permission",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.entity.Player",
+      "java.lang.String"
+    ],
+    "method": "playerAdd",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerAdd(org.bukkit.entity.Player,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Player Name",
+      "World Name",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "depositPlayer",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#depositPlayer(java.lang.String,java.lang.String,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "static": true,
+    "method": "values",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.EconomyResponse.ResponseType#values()",
+    "class": "net.milkbowl.vault.economy.EconomyResponse.ResponseType",
+    "return": "net.milkbowl.vault.economy.EconomyResponse.ResponseType[]"
+  },
+  {
+    "descr": "Set group prefix",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group",
+      "Prefix"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "setGroupPrefix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#setGroupPrefix(java.lang.String,java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat"
+  },
+  {
+    "descr": "Remove transient permission from a player.\\nThis implementation can be used by any subclass which implements a \"pure\" superperms plugin, i.e. \\none that only needs the built-in Bukkit API to remove transient permissions from a player.  Any subclass\\nimplementing a plugin which provides its own API for this needs to override this method.",
+    "param-names": [
+      "Permission",
+      "Player",
+      "Permission"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.permission.Permission",
+      "org.bukkit.OfflinePlayer",
+      "java.lang.String"
+    ],
+    "method": "playerRemoveTransient",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.permission.Permission#playerRemoveTransient(org.bukkit.OfflinePlayer,java.lang.String)",
+    "class": "net.milkbowl.vault.permission.Permission",
+    "return": "boolean"
+  },
+  {
+    "descr": "Get group prefix",
+    "param-names": [
+      "Chat",
+      "World",
+      "Group"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.chat.Chat",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "method": "getGroupPrefix",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.chat.Chat#getGroupPrefix(java.lang.String,java.lang.String)",
+    "class": "net.milkbowl.vault.chat.Chat",
+    "return": "java.lang.String"
+  },
+  {
+    "descr": "Returns true if the given implementation supports banks.",
+    "param-names": ["Economy"],
+    "param-types": ["net.milkbowl.vault.economy.Economy"],
+    "method": "hasBankSupport",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#hasBankSupport()",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Player Name",
+      "Amount"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String",
+      "double"
+    ],
+    "method": "depositPlayer",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#depositPlayer(java.lang.String,double)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "net.milkbowl.vault.economy.EconomyResponse"
+  },
+  {
+    "param-names": [
+      "Economy",
+      "Player Name"
+    ],
+    "param-types": [
+      "net.milkbowl.vault.economy.Economy",
+      "java.lang.String"
+    ],
+    "method": "hasAccount",
+    "module": "Vault",
+    "id": "net.milkbowl.vault.economy.Economy#hasAccount(java.lang.String)",
+    "class": "net.milkbowl.vault.economy.Economy",
+    "return": "boolean"
+  }
+]
