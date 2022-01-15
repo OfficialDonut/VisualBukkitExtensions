@@ -1,6 +1,8 @@
 [
   {
     "descr": "Amount modified by calling method",
+    "param-names": ["EconomyResponse"],
+    "param-types": ["net.milkbowl.vault.economy.EconomyResponse"],
     "field": "amount",
     "module": "Vault",
     "id": "net.milkbowl.vault.economy.EconomyResponse#amount",
@@ -1592,6 +1594,8 @@
   },
   {
     "descr": "Success or failure of call. Using Enum of ResponseType to determine valid\\noutcomes",
+    "param-names": ["EconomyResponse"],
+    "param-types": ["net.milkbowl.vault.economy.EconomyResponse"],
     "field": "type",
     "module": "Vault",
     "id": "net.milkbowl.vault.economy.EconomyResponse#type",
@@ -2384,6 +2388,8 @@
   },
   {
     "descr": "Error message if the variable 'type' is ResponseType.FAILURE",
+    "param-names": ["EconomyResponse"],
+    "param-types": ["net.milkbowl.vault.economy.EconomyResponse"],
     "field": "errorMessage",
     "module": "Vault",
     "id": "net.milkbowl.vault.economy.EconomyResponse#errorMessage",
@@ -2555,6 +2561,8 @@
   },
   {
     "descr": "New balance of account",
+    "param-names": ["EconomyResponse"],
+    "param-types": ["net.milkbowl.vault.economy.EconomyResponse"],
     "field": "balance",
     "module": "Vault",
     "id": "net.milkbowl.vault.economy.EconomyResponse#balance",
